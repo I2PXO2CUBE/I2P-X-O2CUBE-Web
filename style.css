@@ -1004,3 +1004,81 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    
+    /* 1. 전체 컨테이너: 양옆 여백을 줄여서 화면을 넓게 씀 */
+    .games-container {
+        padding: 40px 20px; /* 위아래 40px, 양옆 20px */
+        gap: 40px;          /* 카드 사이 간격 */
+    }
+
+    /* 2. 게임 카드: 무조건 세로로 배치 (지그재그 제거) */
+    .game-big-card, 
+    .game-big-card.reverse { /* reverse 클래스도 강제로 덮어씌움 */
+        flex-direction: column !important; /* 이미지 위, 글자 아래 */
+        align-items: stretch; /* 가로로 꽉 차게 */
+        padding: 0;           /* 카드 안쪽 여백 제거 (이미지를 끝까지 붙이기 위해) */
+        height: auto;         /* 높이 자동 조절 */
+        border-radius: 16px;  /* 둥근 모서리 */
+        overflow: hidden;     /* 이미지가 튀어나오지 않게 자름 */
+        background: #fff;     /* 배경 흰색 */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* 그림자 살짝 */
+    }
+
+    /* 3. 이미지 영역: 카드 상단에 꽉 차게 배치 */
+    .game-card-img {
+        width: 100%;          /* 가로 꽉 차게 */
+        height: 200px;        /* 높이는 적당히 고정 */
+        aspect-ratio: auto;   /* PC 비율 무시 */
+        border-radius: 0;     /* 이미지 자체 둥글기 제거 (카드 둥글기 따름) */
+        background-color: #eee;
+    }
+
+    /* 이미지가 찌그러지지 않고 잘 보이게 */
+    .game-actual-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* 4. 텍스트 정보 영역: 여백을 여기서 따로 줌 */
+    .game-card-info {
+        padding: 25px 20px;   /* 글자 주변 여백 */
+        text-align: left;     /* 왼쪽 정렬 */
+    }
+
+    /* 5. 제목 및 설명 글씨 크기 최적화 */
+    .game-card-tag {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+
+    .game-card-title {
+        font-size: 1.6rem;    /* 제목 너무 크지 않게 */
+        margin-bottom: 12px;
+        line-height: 1.3;
+    }
+
+    .game-card-desc {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        word-break: keep-all; /* 단어 단위 줄바꿈 */
+    }
+
+    /* 6. 버튼: 모바일에서는 누르기 쉽게 꽉 채움 */
+    .game-card-btns {
+        display: flex;
+        flex-direction: column; /* 버튼을 세로로 쌓음 */
+        gap: 10px;              /* 버튼 사이 간격 */
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;           /* 버튼 가로 꽉 차게 */
+        text-align: center;    /* 글자 가운데 정렬 */
+        padding: 15px 0;       /* 터치 영역 확보를 위해 높이 키움 */
+        font-size: 1rem;
+    }
+}
