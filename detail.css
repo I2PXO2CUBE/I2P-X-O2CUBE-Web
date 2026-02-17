@@ -98,3 +98,52 @@
     .header-flex { flex-direction: column; text-align: center; }
     #game-title { font-size: 2rem; }
 }
+/* =========================================
+   [모바일 최적화 추가] detail.css 맨 아래 추가
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* 1. 메인 배너 높이 자동 조절 (중요!) */
+    .detail-wrapper .main-banner {
+        height: auto !important;   /* 500px 고정 해제 */
+        aspect-ratio: 16 / 9;      /* 비율 유지하며 줄어듦 */
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* 2. 제목 글씨 크기 조절 */
+    #game-title {
+        font-size: 2rem;       /* 2.8rem -> 2rem 축소 */
+        word-break: keep-all;  /* 단어 단위 줄바꿈 */
+        line-height: 1.2;
+    }
+
+    /* 3. 아이콘 크기 살짝 축소 */
+    .detail-wrapper .detail-game-icon {
+        width: 100px !important;
+        height: 100px !important;
+        min-width: 100px;
+        border-radius: 20px;
+    }
+
+    /* 4. 컨텐츠 박스 여백 줄임 (화면 넓게 쓰기) */
+    .game-description, .game-gallery, .info-card {
+        padding: 25px 20px; /* 좌우 여백 축소 */
+    }
+
+    /* 5. 스크린샷 1열로 변경 (크게 보기) */
+    .detail-wrapper .screenshot-grid {
+        grid-template-columns: 1fr; /* 한 줄에 하나씩 */
+        gap: 20px;
+    }
+
+    /* 6. 사이드바(개발자 정보 등) 여백 정리 */
+    .detail-grid {
+        gap: 30px;
+        margin-top: 20px;
+    }
+    
+    .side-info {
+        gap: 15px;
+    }
+}
