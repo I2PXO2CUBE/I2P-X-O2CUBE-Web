@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const names = { 
             'notice': '공지사항', 
             'dev': '개발일지', 
-            'event': '이벤트' 
+            'event': '오투소식' 
         };
         return names[cat] || cat;
     }

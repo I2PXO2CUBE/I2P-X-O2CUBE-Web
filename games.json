@@ -1,5 +1,169 @@
 [
     {
+        "id": "Isolation",
+        "year": "2025",
+        "tag": "2025 I2PxO2CUBE Project",
+        "title": "고립",
+        "icon" : "images/2025/고립.jpg",
+        "desc": "추가예정",
+        "detail_desc": "추가예정",
+        "release_date": "2025",
+        "team": "HORIZON",
+        "platform": "PC",
+        "img": "images/2025/고립.jpg",
+        "screenshots": ["images/2025/고립.png"],
+        "download_url": "",
+        "links": [
+            { "text": "상세 보기", "url": "#", "type": "primary" }
+        ],
+        "leader": "김선욱",
+        "members": [
+            { "name": "송민주", "role": "프로그래머" },
+            { "name": "이윤규", "role": "프로그래머" },
+            { "name": "장영규", "role": "프로그래머" }, 
+            { "name": "전서현", "role": "프로그래머" },
+            { "name": "홍보석", "role": "프로그래머" },
+            { "name": "고은혁", "role": "아트" },
+            { "name": "고예진", "role": "아트" },
+            { "name": "김가윤", "role": "아트" },
+            { "name": "백효원", "role": "아트" }
+        ]
+    },
+    {
+        "id": "Cylinder",
+        "year": "2025",
+        "tag": "2025 I2PxO2CUBE Project",
+        "title": "Cylinder",
+        "icon" : "images/2025/실린더.jpg",
+        "desc": "추가예정",
+        "detail_desc": "추가예정",
+        "release_date": "2025",
+        "team": "리볼버",
+        "platform": "PC",
+        "img": "images/2025/실린더.jpg",
+        "screenshots": ["images/2025/실린더.png"],
+        "download_url": "",
+        "links": [
+            { "text": "상세 보기", "url": "#", "type": "primary" }
+        ],
+        "leader": "정수연",
+        "members": [
+            { "name": "박윤구", "role": "프로그래머" },
+            { "name": "손호인", "role": "프로그래머" },
+            { "name": "오지연", "role": "프로그래머" },
+            { "name": "홍수민", "role": "프로그래머" },
+            { "name": "이영상", "role": "프로그래머" },
+            { "name": "김채현", "role": "아트" },
+            { "name": "안우빈", "role": "아트" }, 
+            { "name": "최지후", "role": "기획" },
+            { "name": "오민서", "role": "아트" }
+        ]
+    },
+    {
+        "id": "FoodStrike",
+        "year": "2025",
+        "tag": "2025 I2PxO2CUBE Project",
+        "title": "푸드 스트라이크",
+        "icon" : "images/2025/푸드스트라이크.jpg",
+        "desc": "추가예정",
+        "detail_desc": "추가예정",
+        "release_date": "2025",
+        "team": "Pine Dining",
+        "platform": "PC",
+        "img": "images/2025/푸드스트라이크.jpg",
+        "screenshots": ["images/2025/푸드스트라이크.png"],
+        "download_url": "",
+        "links": [
+            { "text": "상세 보기", "url": "#", "type": "primary" }
+        ],
+        "leader": "이원준",
+        "members": [
+            { "name": "김도훈", "role": "프로그래머" },
+            { "name": "김성현", "role": "프로그래머" },
+            { "name": "차순우", "role": "프로그래머" },
+            { "name": "김단아", "role": "아트" },
+            { "name": "이난희", "role": "아트" },
+            { "name": "이서현", "role": "아트" }
+        ]
+    },
+    {
+        "id": "RetroPunkMHZ",
+        "year": "2025",
+        "tag": "2025 I2PxO2CUBE Project",
+        "title": "RetroPunk MHZ",
+        "icon" : "images/2025/레트로.jpg",
+        "desc": "추가예정",
+        "detail_desc": "추가예정",
+        "release_date": "2025",
+        "team": "미드나잇 CRT",
+        "platform": "PC",
+        "img": "images/2025/레트로.jpg",
+        "screenshots": ["images/2025/레트로.png"],
+        "download_url": "",
+        "links": [
+            { "text": "상세 보기", "url": "#", "type": "primary" }
+        ],
+        "leader": "김상연",
+        "members": [
+            { "name": "권기윤", "role": "?" },
+            { "name": "남진우", "role": "?" },
+            { "name": "손마루", "role": "프로그래머" },
+            { "name": "송민경", "role": "?" },
+            { "name": "조하성", "role": "프로그래머" }
+        ]
+    },
+    {
+        "id": "NewRun",
+        "year": "2025",
+        "tag": "2025 I2PxO2CUBE Project",
+        "title": "Project NewRun",
+        "icon" : "images/2025/뉴런.jpg",
+        "desc": "추가예정",
+        "detail_desc": "추가예정",
+        "release_date": "2025",
+        "team": "NewRun",
+        "platform": "PC",
+        "img": "images/2025/뉴런.jpg",
+        "screenshots": ["images/2025/뉴런.png"],
+        "download_url": "",
+        "links": [
+            { "text": "상세 보기", "url": "#", "type": "primary" }
+        ],
+        "leader": "이영수",
+        "members": [
+            { "name": "박성호", "role": "?" },
+            { "name": "이우진", "role": "?" },
+            { "name": "장윤건", "role": "프로그래머" }, 
+            { "name": "정하랑", "role": "?" }
+        ]
+    },
+    {
+        "id": "LittleCastleDefense",
+        "year": "2025",
+        "tag": "2025 I2PxO2CUBE Project",
+        "title": "Little Castle Defense",
+        "icon" : "images/2025/리캐디.jpg",
+        "desc": "추가예정",
+        "detail_desc": "추가예정",
+        "release_date": "2025",
+        "team": "Chill소",
+        "platform": "PC",
+        "img": "images/2025/리캐디.jpg",
+        "screenshots": ["images/2025/리캐디.png"],
+        "download_url": "",
+        "links": [
+            { "text": "상세 보기", "url": "#", "type": "primary" }
+        ],
+        "leader": "손동찬",
+        "members": [
+            { "name": "김민성", "role": "프로그래머" },
+            { "name": "김주형", "role": "프로그래머" },
+            { "name": "정효원", "role": "프로그래머" },
+            { "name": "허진형", "role": "프로그래머" },
+            { "name": "안대영", "role": "아트" }
+        ]
+    },
+    {
         "id": "OFY_Research",
         "year": "2025",
         "tag": "2025 컨퍼런스논문(한국정보보호학회 2025년 동계학술대회)",
