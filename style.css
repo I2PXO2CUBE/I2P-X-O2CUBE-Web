@@ -859,3 +859,89 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media (max-width: 768px) {
+
+    /* 1. 헤더: 모바일에서는 2줄로 변경 (로고 / 메뉴) */
+    header, header.scrolled {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        height: auto; /* 고정 높이 해제 */
+    }
+
+    .gnb {
+        gap: 15px;
+        font-size: 0.9rem;
+        flex-wrap: wrap; /* 메뉴가 많으면 줄바꿈 */
+        justify-content: center;
+    }
+
+    .user-menu {
+        position: absolute; /* 우측 상단 고정 */
+        top: 15px;
+        right: 20px;
+    }
+
+    /* 2. 메인 히어로 섹션: 글씨 크기 조절 */
+    .hero-content {
+        left: 20px; /* 왼쪽 여백 줄임 */
+        bottom: 50px;
+        width: calc(100% - 40px); /* 화면 꽉 차게 */
+    }
+
+    .hero-title {
+        font-size: 2.5rem; /* 제목 크기 축소 (4rem -> 2.5rem) */
+        line-height: 1.2;
+    }
+
+    .hero-desc {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    /* 3. 섹션 여백 정리 (양옆 60px -> 20px) */
+    .news-section, .games-section, .apply-container, .about-section {
+        padding: 60px 20px; /* 위아래는 유지, 양옆은 좁게 */
+    }
+
+    /* 4. 뉴스 그리드: 3열 -> 1열로 변경 (세로로 쭉 나열) */
+    .news-grid {
+        grid-template-columns: 1fr; /* 한 줄에 하나씩 */
+        gap: 40px;
+    }
+
+    /* 5. 섹션 헤더 (제목 + 더보기 버튼) 정렬 수정 */
+    .section-header {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem; /* 섹션 제목 크기 축소 */
+    }
+
+    /* 6. 게임 슬라이더 카드 크기 조절 */
+    .game-banner {
+        min-width: 85vw; /* 화면 너비의 85%만큼 차지하게 */
+        height: 400px;   /* 높이 약간 줄임 */
+        margin-right: 15px;
+    }
+
+    /* 7. 상세 페이지 (Detail) 헤더 글씨 조절 */
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+        padding: 0 20px;
+        word-break: keep-all; /* 단어 단위 줄바꿈 */
+    }
+
+    /* 8. 지원하기 버튼 크기 조절 */
+    .btn-apply-google {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        width: 100%; /* 버튼이 꽉 차게 */
+    }
+}
