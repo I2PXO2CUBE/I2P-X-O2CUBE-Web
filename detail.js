@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('game-short-desc').innerText = game.desc;
         document.getElementById('game-icon').src = game.icon || 'images/default-icon.png';
         document.getElementById('main-img').src = game.img;
-        document.getElementById('full-desc').innerText = game.detail_desc || game.desc;
+        document.getElementById('full-desc').innerHTML = game.detail_desc || game.desc;
 
         // 사이드바 정보 (중복 코드 정리)
         document.getElementById('release-date').innerText = game.release_date || '출시일 정보 없음';
