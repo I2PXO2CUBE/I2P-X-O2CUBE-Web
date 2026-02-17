@@ -142,15 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. 지원 폼 제출 (기존 유지)
-    const applyForm = document.getElementById('applyForm');
-    if (applyForm) {
-        applyForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert(`${document.getElementById('name').value}님의 지원서가 접수되었습니다!`);
-            applyForm.reset();
-        });
-    }
+
 
     const mainNewsContainer = document.getElementById('main-news-container');
     const mainGamesContainer = document.getElementById('main-games-container');
@@ -206,4 +198,5 @@ document.addEventListener('DOMContentLoaded', () => {
         const names = { 'notice': '공지사항', 'dev': '개발일지', 'event': '이벤트' };
         return names[cat] || cat;
     }
+    
 });

@@ -33,62 +33,33 @@
     </div>
 
     <section class="apply-container">
-        <div class="apply-box">
-            <form id="applyForm">
-                <div class="form-section">
-                    <h3 class="form-title">기본 정보</h3>
-                    <div class="input-group">
-                        <label for="name">이름</label>
-                        <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
-                    </div>
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label for="studentId">학번</label>
-                            <input type="text" id="studentId" name="studentId" placeholder="예: 22학번" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="major">학과</label>
-                            <input type="text" id="major" name="major" placeholder="전공 학과" required>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="phone">연락처</label>
-                        <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" required>
-                    </div>
+        <div class="apply-box" style="text-align: center; max-width: 600px;">
+            
+            <div class="recruit-info">
+                <h2 style="font-size: 2rem; margin-bottom: 30px; word-break: keep-all;">
+                    I2PxO2CUBE와 함께할<br>여러분을 기다립니다.
+                </h2>
+                
+                <div class="period-box" style="background: #f8f9fa; padding: 20px; border-radius: 12px; display: inline-block; margin-bottom: 40px;">
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">모집 기간</p>
+                    <p style="color: #333; font-size: 1.5rem; font-weight: 800; letter-spacing: 0.5px;">
+                        2026.02.20 ~ 2026.03.06
+                    </p>
                 </div>
+            </div>
 
-                <div class="form-section">
-                    <h3 class="form-title">지원 분야</h3>
-                    <div class="radio-group">
-                        <label class="radio-item">
-                            <input type="radio" name="position" value="plan" required>
-                            <span>기획 & 운영</span>
-                        </label>
-                        <label class="radio-item">
-                            <input type="radio" name="position" value="dev">
-                            <span>프로그래밍</span>
-                        </label>
-                        <label class="radio-item">
-                            <input type="radio" name="position" value="art">
-                            <span>아트 & 디자인</span>
-                        </label>
-                    </div>
-                </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzHFef604Dl_P-Vpb_afYxFXk0sj05nKa65kg4CvYGlUL64g/viewform" 
+               target="_blank" 
+               class="btn-apply-google">
+               
+               <span>지원서 작성하러 가기</span>
+               <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i>
+            </a>
 
-                <div class="form-section">
-                    <h3 class="form-title">자기소개 및 포트폴리오</h3>
-                    <div class="input-group">
-                        <label for="motivation">지원 동기 및 포부</label>
-                        <textarea id="motivation" name="motivation" rows="5" placeholder="동아리에 지원하게 된 이유를 적어주세요" required></textarea>
-                    </div>
-                    <div class="input-group">
-                        <label for="portfolio">포트폴리오 링크 (GitHub, Notion 등)</label>
-                        <input type="url" id="portfolio" name="portfolio" placeholder="https://...">
-                    </div>
-                </div>
+            <p style="margin-top: 20px; color: #888; font-size: 0.9rem;">
+                * 버튼을 누르면 구글 폼 페이지로 이동합니다.
+            </p>
 
-                <button type="submit" class="submit-btn">지원서 제출하기</button>
-            </form>
         </div>
     </section>
 

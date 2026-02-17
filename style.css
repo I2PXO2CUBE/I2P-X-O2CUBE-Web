@@ -823,6 +823,30 @@ footer {
     color: #ddd;         /* 마우스 올렸을 때 색상 */
     transform: scale(1.1); /* 살짝 커지는 효과 */
 }
+
+/* style.css 추가 */
+
+/* 구글 폼 바로가기 버튼 스타일 */
+.btn-apply-google {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 50px; /* 둥근 알약 모양 */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* 그림자 효과 */
+}
+
+.btn-apply-google:hover {
+    background-color: #007bff; /* 마우스 올리면 파란색 */
+    transform: translateY(-3px); /* 살짝 위로 뜸 */
+    box-shadow: 0 15px 30px rgba(0,123,255,0.3); /* 파란 그림자 */
+}
 /* 모바일 대응 */
 @media (max-width: 600px) {
     .apply-box { padding: 30px 20px; }
